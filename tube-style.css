@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: #FF4500;
+}
+section{
+    padding: 40px 0;
+}
+.tube-text1{
+  var(--main-bg-color)
+}
+.bg-main{
+  background-color: var(--main-bg-color);
+  color: #fff;
+}
+.btn-cprimary{
+  border: 1px solid #eee;
+  background-color: #212529;
+  color: #fff;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.btn-cprimary:hover,.btn-csecondary:hover{
+  color:#fff!important;
+}
+.btn-csecondary{
+  border: 1px solid #eee;
+  background-color: var(--main-bg-color);
+  color: #fff;
+  padding: 0.3rem 1.8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*Header Css*/
+
+.hcustomnav-link{
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+/*swiper css*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-edit {
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide-edit1{
+  height:300px;
+  border-radius: 0.5rem;
+}
+.swiper-pagination-bullet-active{
+  background: var(--main-bg-color);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  transform: scale(1);
+}
+.swiper-button-next{
+  right:-100px;
+}
+.swiper-button-prev{
+  left:-100px;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+  opacity:0;
+}
+.form1-container {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.5));
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 1.5rem;
+  z-index: 999;
+}
+.rating {
+  display: inline-flex;
+  margin-top: -10px;
+  flex-direction: row-reverse
+}
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  font-size: 1.1rem;
+  color: #FDCC0D;
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+/* .rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+} */
+
+/* .rating>input:checked~label:before {
+  opacity: 1
+} */
+/*testimonial css*/
+#testimonial{
+  height:90vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://cdn.thewirecutter.com/wp-content/uploads/2016/11/hangers-2x1-fullres--1024x512.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-contentimg{
+  width:100px;
+  height: 100px;
+  margin: -40px auto auto;
+  border-radius: 50%;
+  border: 5px solid #eee;
+}
+.slider-contentimg>img{
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/*Our Clients css*/
+#our-clients,#tube-footer{
+  padding: 40px 0;
+  background-color: #eee;
+}
+/*Footer css*/
+.fcustomnav-link,.fcustomnav-link:hover{
+  color:#6c757d;
+}
+#subscribe-input{
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  height: 2rem;
+  border-radius: 0.1rem;
+  background: transparent;
+}
+#subscribe-input:focus{
+  box-shadow: none!important;
+  background: #fff;
+  border-bottom: 2px solid var(--main-bg-color);
+}
+.social-wrapper>.social-link{
+  display: inline-flex;
+  margin:0.3rem;
+}
+.social-link{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+.social-link:hover{
+  background-color: var(--main-bg-color);
+  color:#fff;
+}
+.social-link>i{
+  font-size: 1.5rem;
+}
+/*Scroll top css*/
+#scroll {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:#ff4500e0;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px;
+  z-index: 99999999;
+  color:#fff;
+  font-size: 1.5rem;
+}
+#scroll:hover {
+  background-color:var(--main-bg-color);
+}
+.scrolltop-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* jQuery Navbar Styles===================================*/
+.navbar-scroll {
+  position: fixed;
+  top:0!important;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  padding: 0rem 1rem;
+	background: #ffffff;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.6s ease-in-out;
+}
+
+.heading-bborder::after {
+  content: "";
+  position: absolute;
+  top: 51px;
+  display: block;
+  height: 3px;
+  width: 3rem;
+  background: var(--main-bg-color);;
+}
